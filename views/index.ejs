@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172003136-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172003136-2');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Results</title>
+    <style>
+        body{
+            font-family:sans-serif;
+            background-color: #FFFAFA;
+        }
+        h2, h3,h4{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        form{
+            text-align: center;
+        }
+        input,select{
+            padding: 7px;
+            margin:10px;
+            font-size: medium;
+        }
+        #submit{
+            background-color: indigo;
+            border: none;
+            color:white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 150px;
+        }
+        #inst{
+            width:50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Goa Board SSC Results 2020</h2>
+    <h3>Enter either firstname or surname</h3>
+    <div>
+        <form id="demo" method="GET" action="/search" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="query" id="query" placeholder="Name">
+            <select name="centre" id="centre">
+                <option value="" disabled selected>Centre</option>
+                <option value="aldona">Aldona</option>
+                <option value="bicholim">Bicholim</option>
+                <option value="calangute">Calangute</option>
+                <option value="canacona">Canacona</option>
+                <option value="cujira">Cujira</option>
+                <option value="cuncolim">Cuncolim</option>
+                <option value="curchorem">Curchorem</option>
+                <option value="kepem">Kepem</option>
+                <option value="mandrem">Mandrem</option>
+                <option value="mapusa">Mapusa</option>
+                <option value="marcela">Marcela</option>
+                <option value="margao">Margao</option>
+                <option value="mangueshi">Mangueshi</option>
+                <option value="navelim">Navelim</option>
+                <option value="paingin">Paingin</option>
+                <option value="panaji">Panaji</option>
+                <option value="pernem">Pernem</option>
+                <option value="pilar">Pilar</option>
+                <option value="ponda">Ponda</option>
+                <option value="porvorim">Porvorim</option>
+                <option value="sanguem">Sanguem</option>
+                <option value="sanquelim">Sanquelim</option>
+                <option value="shiroda">Shiroda</option>
+                <option value="siolim">Siolim</option>
+                <option value="tisk">Tisk/Dharbandora</option>
+                <option value="valpoi">Valpoi</option>
+                <option value="vasco">Vasco</option>
+                <option value="verna">Verna</option>
+            </select>
+            </br></br>
+            <input type="submit" id="submit" value="Search" onclick="return empty()"></input>
+        </form>
+    </div>
+    <h3>Instructions to use this website</h3>
+    <div id="inst">
+        <p>1. Enter the student's first or last name, if you enter the full name then it wont work.</p>
+        <p>2. If you can't find a result then try selecting a different centre</p>
+        <p>3. Official result booklet <a href="http://www.gbshse.info/wp-content/uploads/2020/07/SSC-Result-Booklet-April-May-2020.pdf">click here</a></p>
+        <p>4. Feel free to contact me on twitter if you face any problem <a href="https://twitter.com/sawantkartik" target="_blank">twitter.com/sawantkartik</a></p>
+    </div>
+    <h3>Developed by <a href="https://kartiksawant.github.io" target="_blank">Kartik Sawant</a></h3>
+    <script>
+        function empty() {
+    var x;
+    var y;
+    x = document.getElementById("query").value;
+    y = document.getElementById("centre").value;
+    if (x == ""||y == "") {
+        alert("Please enter all the details");
+        return false;
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172003136-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172003136-2');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #FFFAFA;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        table,th,td{
+            border: 1px solid black;
+            padding:5px
+        }
+        th {
+            text-align: left;
+            height:50px;
+        }
+        h2,h3,h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3><%=response.name%></h3>
+    <h3><%=response.roll%></h3>
+    <br>
+    <table>
+        <%-response.res%>
+    </table>
+    <br><br>
+    <h3>Developed by <a href="https://kartiksawant.github.io" target="_blank">Kartik Sawant</a></h3>
+
+</body>
+</html>
